@@ -18,12 +18,15 @@
     "url": "git://github.com/kaldor/generator-pugpig.git"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
-    "yeoman-generator": "0.14.2",
+    "yeoman-generator": "0.21.0",
     "lodash": "2.0.0",
-    "chalk": "0.2.1"
+    "chalk": "0.2.1",
+    "snyk": "^1.104.2"
   },
   "devDependencies": {
     "mocha": "~1.12.0"
@@ -39,5 +42,6 @@
     {
       "type": "MIT"
     }
-  ]
+  ],
+  "snyk": true
 }
